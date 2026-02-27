@@ -1,0 +1,44 @@
+{
+  "trigger_rules": {
+    "feedback_collection": {
+      "trigger_words": ["完成", "搞定", "做完了", "结束了", "好了", "OK了", "✅", "成功"],
+      "action": "自动触发反馈收集流程",
+      "priority": "高",
+      "fields_to_collect": [
+        "刚才完成的任务是什么？",
+        "哪些做得好？",
+        "遇到了什么问题？",
+        "下次怎么改进？"
+      ]
+    },
+    "opportunity_capture": {
+      "trigger_words": ["发现", "机会", "可以试试", "有意思的", "新想法", "灵感", "商业模式"],
+      "action": "自动触发机会评估流程",
+      "priority": "中",
+      "fields_to_collect": [
+        "这是什么机会？",
+        "市场规模多大？",
+        "竞争强度如何？",
+        "预期回报？"
+      ]
+    },
+    "lesson_capture": {
+      "trigger_words": ["踩坑", "失败", "错误", "问题", "bug", "不work", "搞不定"],
+      "action": "自动触发教训记录流程",
+      "priority": "高",
+      "fields_to_collect": [
+        "发生了什么？",
+        "根本原因是什么？",
+        "怎么避免下次？"
+      ]
+    },
+    "task_break": {
+      "trigger_words": ["休息", "累", "先暂停", "一会再说", "歇会"],
+      "action": "提醒记录当前进度",
+      "priority": "低",
+      "message": "建议花30秒记录当前进度，方便继续"
+    }
+  },
+  "usage_guide": "当检测到触发词时，数字分身应主动询问用户是否需要执行对应的收集流程",
+  "last_updated": "2026-02-07"
+}

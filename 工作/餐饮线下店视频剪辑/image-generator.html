@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI图片生成器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: #007AFF;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0051D5;
+        }
+
+        .btn-success {
+            background: #34C759;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #FF3B30;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #8E8E93;
+            color: white;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .image-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            transition: border-color 0.2s;
+        }
+
+        .image-card.selected {
+            border-color: #007AFF;
+            background: #f0f8ff;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .image-card .info {
+            padding: 10px;
+        }
+
+        .image-card .prompt {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .image-card .actions {
+            display: flex;
+            gap: 5px;
+        }
+
+        .image-card .actions button {
+            flex: 1;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        .selected-list {
+            margin-top: 15px;
+        }
+
+        .selected-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .selected-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .selected-item .info {
+            flex: 1;
+        }
+
+        .selected-item .prompt {
+            font-size: 13px;
+            color: #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-left: 5px;
+        }
+
+        .status-pending {
+            background: #FFE5B4;
+            color: #9A6700;
+        }
+
+        .status-success {
+            background: #D4F7D4;
+            color: #2D7D2D;
+        }
+
+        .status-error {
+            background: #FFD4D4;
+            color: #CC0000;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-bottom: 20px;">AI图片生成器</h1>
+
+        <!-- 输入区 -->
+        <div class="section">
+            <h2>生成设置</h2>
+            <div class="input-group">
+                <label>提示词</label>
+                <textarea id="prompt" placeholder="描述你想要生成的图片..."></textarea>
+            </div>
+            <div class="input-group">
+                <label>负向提示词（可选）</label>
+                <input type="text" id="negativePrompt" placeholder="不想要的内容...">
+            </div>
+            <div class="row">
+                <div class="col input-group">
+                    <label>图片尺寸</label>
+                    <select id="aspectRatio">
+                        <option value="9:16">9:16 (竖屏)</option>
+                        <option value="16:9">16:9 (横屏)</option>
+                        <option value="1:1">1:1 (方形)</option>
+                    </select>
+                </div>
+                <div class="col input-group">
+                    <label>生成数量</label>
+                    <select id="count">
+                        <option value="1">1张</option>
+                        <option value="2">2张</option>
+                        <option value="4">4张</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="generateImages()">生成图片</button>
+        </div>
+
+        <!-- 预览区 -->
+        <div class="section">
+            <h2>生成结果 <span id="resultCount" class="status-badge status-pending">0张</span></h2>
+            <div id="previewArea" class="image-grid">
+                <div class="empty-state">暂无生成结果</div>
+            </div>
+        </div>
+
+        <!-- 筛选区 -->
+        <div class="section">
+            <h2>已选图片 <span id="selectedCount" class="status-badge status-success">0张</span></h2>
+            <div id="selectedArea" class="selected-list">
+                <div class="empty-state">尚未选择图片</div>
+            </div>
+            <div style="margin-top: 15px;">
+                <button class="btn btn-success" onclick="exportImages()">导出选中图片</button>
+                <button class="btn btn-secondary" onclick="clearAll()">清空全部</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script>
+        // 全局状态
+        let generatedImages = [];
+        let selectedImages = [];
+
+        // TODO: 替换为实际的API配置
+        const API_CONFIG = {
+            baseUrl: '', // 即梦或可灵的API地址
+            apiKey: '',  // API密钥
+            model: ''    // 模型名称
+        };
+
+        // 生成图片（目前是mock，等API确定后替换）
+        async function generateImages() {
+            const prompt = document.getElementById('prompt').value.trim();
+            const negativePrompt = document.getElementById('negativePrompt').value.trim();
+            const aspectRatio = document.getElementById('aspectRatio').value;
+            const count = parseInt(document.getElementById('count').value);
+
+            if (!prompt) {
+                alert('请输入提示词');
+                return;
+            }
+
+            // TODO: 替换为实际的API调用
+            // 现在先mock，等待API确定后直接替换这个函数
+            await mockGenerateImages(prompt, negativePrompt, aspectRatio, count);
+        }
+
+        // Mock生成（占位函数）
+        async function mockGenerateImages(prompt, negativePrompt, aspectRatio, count) {
+            const previewArea = document.getElementById('previewArea');
+            previewArea.innerHTML = '<div class="loading">生成中...</div>';
+
+            // 模拟延迟
+            await new Promise(resolve => setTimeout(resolve, 1500));
+
+            // 计算尺寸
+            const dimensions = {
+                '9:16': { width: 720, height: 1280 },
+                '16:9': { width: 1280, height: 720 },
+                '1:1': { width: 1024, height: 1024 }
+            };
+            const dim = dimensions[aspectRatio];
+
+            // 生成mock图片
+            for (let i = 0; i < count; i++) {
+                const imageData = {
+                    id: Date.now() + i,
+                    prompt: prompt,
+                    negativePrompt: negativePrompt,
+                    aspectRatio: aspectRatio,
+                    width: dim.width,
+                    height: dim.height,
+                    url: `https://via.placeholder.com/${dim.width}x${dim.height}?text=Image+${i + 1}`,
+                    createdAt: new Date().toISOString(),
+                    status: 'success'
+                };
+                generatedImages.push(imageData);
+            }
+
+            renderPreviewArea();
+            updateCounts();
+        }
+
+        // 真实API调用模板（等API确定后启用）
+        async function realApiCall(prompt, negativePrompt, aspectRatio, count) {
+            try {
+                // TODO: 根据实际API文档调整请求格式
+                const response = await fetch(API_CONFIG.baseUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${API_CONFIG.apiKey}`
+                    },
+                    body: JSON.stringify({
+                        prompt: prompt,
+                        negative_prompt: negativePrompt,
+                        aspect_ratio: aspectRatio,
+                        count: count,
+                        model: API_CONFIG.model
+                    })
+                });
+
+                const data = await response.json();
+
+                // TODO: 根据实际API响应格式解析
+                // 示例：
+                data.images.forEach(img => {
+                    generatedImages.push({
+                        id: img.id || Date.now(),
+                        prompt: prompt,
+                        negativePrompt: negativePrompt,
+                        aspectRatio: aspectRatio,
+                        url: img.url,
+                        createdAt: new Date().toISOString(),
+                        status: 'success'
+                    });
+                });
+
+                renderPreviewArea();
+                updateCounts();
+
+            } catch (error) {
+                alert('生成失败：' + error.message);
+            }
+        }
+
+        // 渲染预览区
+        function renderPreviewArea() {
+            const previewArea = document.getElementById('previewArea');
+
+            if (generatedImages.length === 0) {
+                previewArea.innerHTML = '<div class="empty-state">暂无生成结果</div>';
+                return;
+            }
+
+            previewArea.innerHTML = generatedImages.map(img => `
+                <div class="image-card ${selectedImages.includes(img.id) ? 'selected' : ''}" id="card-${img.id}">
+                    <img src="${img.url}" onclick="previewImage(${img.id})" alt="${img.prompt}">
+                    <div class="info">
+                        <div class="prompt" title="${img.prompt}">${img.prompt}</div>
+                        <div class="actions">
+                            <button class="btn btn-success" onclick="selectImage(${img.id})">
+                                ${selectedImages.includes(img.id) ? '已选择' : '选择'}
+                            </button>
+                            <button class="btn btn-danger" onclick="deleteImage(${img.id})">删除</button>
+                            <button class="btn btn-secondary" onclick="regenerate(${img.id})">重试</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 选择图片
+        function selectImage(id) {
+            const img = generatedImages.find(i => i.id === id);
+            if (!img) return;
+
+            const index = selectedImages.indexOf(id);
+            if (index > -1) {
+                selectedImages.splice(index, 1);
+            } else {
+                selectedImages.push(id);
+            }
+
+            renderPreviewArea();
+            renderSelectedArea();
+            updateCounts();
+        }
+
+        // 删除图片
+        function deleteImage(id) {
+            generatedImages = generatedImages.filter(i => i.id !== id);
+            selectedImages = selectedImages.filter(i => i !== id);
+            renderPreviewArea();
+            renderSelectedArea();
+            updateCounts();
+        }
+
+        // 重试（用相同参数重新生成）
+        function regenerate(id) {
+            const img = generatedImages.find(i => i.id === id);
+            if (!img) return;
+
+            document.getElementById('prompt').value = img.prompt;
+            document.getElementById('negativePrompt').value = img.negativePrompt || '';
+            document.getElementById('aspectRatio').value = img.aspectRatio;
+
+            deleteImage(id);
+            generateImages();
+        }
+
+        // 渲染已选区
+        function renderSelectedArea() {
+            const selectedArea = document.getElementById('selectedArea');
+
+            if (selectedImages.length === 0) {
+                selectedArea.innerHTML = '<div class="empty-state">尚未选择图片</div>';
+                return;
+            }
+
+            const selected = generatedImages.filter(i => selectedImages.includes(i.id));
+
+            selectedArea.innerHTML = selected.map(img => `
+                <div class="selected-item">
+                    <img src="${img.url}" alt="${img.prompt}">
+                    <div class="info">
+                        <div class="prompt">${img.prompt}</div>
+                        <small style="color: #999;">${img.aspectRatio} | ${new Date(img.createdAt).toLocaleTimeString()}</small>
+                    </div>
+                    <button class="btn btn-danger" onclick="selectImage(${img.id})">移除</button>
+                </div>
+            `).join('');
+        }
+
+        // 更新计数
+        function updateCounts() {
+            document.getElementById('resultCount').textContent = `${generatedImages.length}张`;
+            document.getElementById('selectedCount').textContent = `${selectedImages.length}张`;
+        }
+
+        // 导出图片
+        async function exportImages() {
+            if (selectedImages.length === 0) {
+                alert('请先选择图片');
+                return;
+            }
+
+            const zip = new JSZip();
+            const selected = generatedImages.filter(i => selectedImages.includes(i.id));
+            const metadata = [];
+
+            for (let i = 0; i < selected.length; i++) {
+                const img = selected[i];
+
+                try {
+                    // 下载图片
+                    const response = await fetch(img.url);
+                    const blob = await response.blob();
+
+                    // 生成文件名
+                    const promptShort = img.prompt.substring(0, 6);
+                    const timestamp = new Date(img.createdAt).getTime();
+                    const filename = `${i + 1}_${promptShort}_${timestamp}.png`;
+
+                    // 添加到ZIP
+                    zip.file(filename, blob);
+
+                    // 记录元数据
+                    metadata.push({
+                        filename: filename,
+                        prompt: img.prompt,
+                        negativePrompt: img.negativePrompt,
+                        aspectRatio: img.aspectRatio,
+                        width: img.width,
+                        height: img.height,
+                        createdAt: img.createdAt
+                    });
+
+                } catch (error) {
+                    alert(`下载图片失败：${img.prompt}`);
+                }
+            }
+
+            // 添加元数据文件
+            zip.file('metadata.json', JSON.stringify(metadata, null, 2));
+
+            // 生成ZIP
+            const content = await zip.generateAsync({ type: 'blob' });
+
+            // 下载
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(content);
+            link.download = `images_${Date.now()}.zip`;
+            link.click();
+        }
+
+        // 清空全部
+        function clearAll() {
+            if (!confirm('确定要清空所有图片吗？')) return;
+
+            generatedImages = [];
+            selectedImages = [];
+            renderPreviewArea();
+            renderSelectedArea();
+            updateCounts();
+
+            document.getElementById('prompt').value = '';
+            document.getElementById('negativePrompt').value = '';
+        }
+
+        // 预览大图（简单实现）
+        function previewImage(id) {
+            const img = generatedImages.find(i => i.id === id);
+            if (!img) return;
+
+            window.open(img.url, '_blank');
+        }
+    </script>
+</body>
+</html>

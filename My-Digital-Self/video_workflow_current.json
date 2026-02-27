@@ -1,0 +1,15 @@
+{
+  "session_id": null,
+  "current_step": null,
+  "project_name": null,
+  "started_at": null,
+  "data": {
+    "video_plan": null,
+    "storyboards": [],
+    "prompts": {},
+    "generated_images": [],
+    "generated_videos": []
+  },
+  "user_feedback": [],
+  "modifications": []
+}

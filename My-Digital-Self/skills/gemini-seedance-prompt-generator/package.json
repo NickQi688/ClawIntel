@@ -1,0 +1,43 @@
+{
+  "name": "gemini-seedance-prompt-generator",
+  "version": "1.2.0",
+  "description": "Seedance 2.0 手册级视频提示词生成器 - 官方使用手册深度优化",
+  "main": "SKILL.md",
+  "keywords": [
+    "seedance",
+    "video",
+    "prompt",
+    "gemini",
+    "generator",
+    "ai"
+  ],
+  "activation": "",
+  "settings": {
+    "model": "gemini-3.5-flash-preview",
+    "maxTokens": 100000,
+    "temperature": 0.7,
+    "nanoBananaProSkill": "nano-banana-pro-prompts-recommend-skill"
+  },
+  "capabilities": [
+    "manual_level_prompts",
+    "at_syntax_support",
+    "four_business_schemes",
+    "split_screen_scripts",
+    "seedance_boundary_check",
+    "first_last_frame_lock",
+    "nano_banana_pro_integration",
+    "conversation_refinement",
+    "api_parameter_optimization"
+  ],
+  "categories": [
+    "manual-standard",
+    "business-video-ads",
+    "food-beverage-specialized",
+    "tech-product-showcase",
+    "lifestyle-cinematic",
+    "immersive-experience",
+    "social-media-content",
+    "product-deconstruction",
+    "brand-storytelling"
+  ]
+}

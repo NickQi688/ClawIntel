@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# 数字分身全局启动脚本 - AI协作版
+# 可在任何终端直接调用，从AI协作目录启动
+
+SCRIPT_DIR="/Users/zhaobo/Documents/qukuaiqiji/my-note/My-Digital-Self"
+
+PROMPT=$(cat "/Users/zhaobo/Documents/qukuaiqiji/my-note/AI协作/数字分身技能.md")
+
+cd "$SCRIPT_DIR" && ~/.opencode/bin/opencode run "$PROMPT"

@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "purpose": "数字分身决策记录库 - 避免重复决策，保持一致性",
+    "last_updated": "2026-02-27",
+    "version": "2.0.0"
+  },
+  "decisions": {
+    "2026-02-27-001": {
+      "topic": "数字分身定位",
+      "decision": "合伙人模式",
+      "reason": "不是助手，是cofounder。人类定方向，我来落地",
+      "impact": "全面重构交互方式",
+      "owner": "小鲸"
+    },
+    "2026-02-27-002": {
+      "topic": "6551 API集成",
+      "decision": "集成，作为主数据源",
+      "reason": "免费、50+新闻源、AI评分系统",
+      "impact": "替换Grok作为主数据源",
+      "status": "已完成"
+    },
+    "2026-02-27-003": {
+      "topic": "crypto-skills同步GitHub",
+      "decision": "创建独立仓库",
+      "reason": "便于多电脑同步，降低重复配置",
+      "next_action": "等待仓库名后推送"
+    },
+    "2026-02-27-004": {
+      "topic": "优先级调整 - 三个提案",
+      "decision": "先做提案1（自动化资讯）+ 提案3（自动记忆），提案2（GitHub）暂缓",
+      "reason": "ROI优先：自动记忆(9) > 自动资讯(8) > GitHub同步(7)，且GitHub还不着急",
+      "outcome": "已完成提案1和3",
+      "timestamp": "2026-02-27T16:50:00Z"
+    }
+  }
+}

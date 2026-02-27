@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "total": 6,
+  "success_count": 5,
+  "results": [
+    {
+      "success": true,
+      "index": 1,
+      "type": "Cover",
+      "filename": "xhs_01_Cover_20260203_020016.jpg",
+      "filepath": "/Users/a2222/xhs_auto_gen/group3_20260203/xhs_01_Cover_20260203_020016.jpg",
+      "file_size_kb": 710.0,
+      "time_seconds": 19.2
+    },
+    {
+      "success": true,
+      "index": 2,
+      "type": "Content",
+      "filename": "xhs_02_Content_20260203_020035.jpg",
+      "filepath": "/Users/a2222/xhs_auto_gen/group3_20260203/xhs_02_Content_20260203_020035.jpg",
+      "file_size_kb": 934.0,
+      "time_seconds": 18.8
+    },
+    {
+      "success": true,
+      "index": 3,
+      "type": "Content",
+      "filename": "xhs_03_Content_20260203_020051.jpg",
+      "filepath": "/Users/a2222/xhs_auto_gen/group3_20260203/xhs_03_Content_20260203_020051.jpg",
+      "file_size_kb": 680.6,
+      "time_seconds": 16.2
+    },
+    {
+      "success": true,
+      "index": 4,
+      "type": "Content",
+      "filename": "xhs_04_Content_20260203_020108.jpg",
+      "filepath": "/Users/a2222/xhs_auto_gen/group3_20260203/xhs_04_Content_20260203_020108.jpg",
+      "file_size_kb": 945.7,
+      "time_seconds": 17.6
+    },
+    {
+      "success": true,
+      "index": 5,
+      "type": "Content",
+      "filename": "xhs_05_Content_20260203_020125.jpg",
+      "filepath": "/Users/a2222/xhs_auto_gen/group3_20260203/xhs_05_Content_20260203_020125.jpg",
+      "file_size_kb": 958.7,
+      "time_seconds": 16.3
+    },
+    {
+      "success": false,
+      "index": 6,
+      "type": "End",
+      "time_seconds": 75.6,
+      "error": "peer closed connection without sending complete message body (incomplete chunked read)"
+    }
+  ],
+  "output_dir": "/Users/a2222/xhs_auto_gen/group3_20260203"
+}

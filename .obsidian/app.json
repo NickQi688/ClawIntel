@@ -1,0 +1,7 @@
+{
+  "baseTheme": "obsidian",
+  "promptDelete": false,
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": false,
+  "newLinkFormat": "relative"
+}

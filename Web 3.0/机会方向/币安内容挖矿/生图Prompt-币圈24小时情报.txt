@@ -1,0 +1,116 @@
+# 币圈24小时情报速览 - 小红书高密度信息图生图 Prompt
+
+========================================
+# 复制以下 Prompt 到图片生成工具
+# 推荐工具: Midjourney / DALL-E 3 / 豆包 / 即梦
+========================================
+
+Create a hand-drawn style Chinese infographic for Xiaohongshu about「币圈24小时情报速览」.
+
+【OVERALL ART STYLE】
+- Hand-drawn doodle illustration style with organic, slightly imperfect ink lines
+- Warm cozy journal/bullet journal aesthetic
+- Sketch-like quality with visible line weight variations
+- **HIGH INFORMATION DENSITY: Pack 7 modules per image**
+- **Text can be SMALLER to fit more content - readability over size**
+
+【COLOR PALETTE】
+- Background: Warm cream/beige with subtle paper texture (#F5F0E6)
+- Primary accent: Muted teal/sage green (#7BA3A8) for headers
+- Secondary accent: Warm terracotta/orange (#D4956A) for highlights
+- Line art: Dark charcoal brown (#4A4540)
+- Alert red: Soft red (#E57373) for warnings
+- Growth green: Soft green (#81C784) for positive signals
+
+【CONTENT - 7 MODULES】
+
+[📈] 价格走势阶梯 - Vertical scale with 4 levels:
+- <63K: ❌ 暴跌区域 - 市场恐慌
+- 63K-65K: ✓ 反弹起点 - 空头挤压开始
+- 68K-69K: ✓ 当前位置 - BTC+7-10%, ETH+11%, SOL+13%
+- 70K-72K: 👑 关键阻力 - 期权max pain 75K
+
+[⚡] 爆仓数据透视 - Liquidation data:
+- 总爆仓: 5.85亿美元
+- 空头: 4.74亿 (81%)
+- 长仓: 1.11亿 (19%)
+- 人数: 129,160人
+- 关键: 短仓首次主导！
+
+[💰] ETF资金流向:
+- 2月24日: +2.58亿美元 ✅
+- BlackRock: +7900万
+- Fidelity: +8300万
+- 总计: 约3990 BTC
+- 历史背景: 结束五周连亏
+
+[🚀] 项目动态亮点:
+Circle: Q4收入+77%, USDC 750亿美元 (+72%), 股价+23%
+交易所: Coinbase 24/7交易, Kraken 20x永续, Binance 10只代币化
+
+[🔍] 链上信号解读:
+- 鲸鱼比率: 0.64 ⚠️ 持续卖出
+- 大户持仓: 9个月低点 ⚠️
+- 活跃地址: 显著回升 ✅
+- 长期成本: 78K中枢
+
+[⚖️] 监管动态追踪:
+- NASAA致信国会 (2026.02.25)
+- 核心: 保留州级监管权
+- 影响: 合规复杂↑
+
+[⏰] 关键时间节点:
+- 本周五: 115K BTC期权到期
+- 关注位: 70K-72K阻力区
+- 警惕: 杠杆仍高
+
+💡 总结: 市场处于"修复模式"，短挤压+ETF回流提振，但70K阻力+鲸鱼出货仍是隐患，谨慎追高！
+
+【ILLUSTRATIONS】
+- Bitcoin ₿ symbols, price ruler with 4 levels
+- Pie chart for liquidation (81% vs 19%)
+- ETF flow arrow diagram
+- USDC coin icon, stock chart +23%
+- Whale icon 🐋, network nodes
+- Capitol building, calendar with Friday
+- Decorative: arrows, sparkles ✨, percentages
+
+Aspect ratio: 3:4 portrait
+All text in CHINESE with crypto symbols
+
+========================================
+# 使用说明
+========================================
+
+## Midjourney 使用方法:
+1. 复制 Prompt
+2. 在 Discord 中输入 /imagine
+3. 粘贴 Prompt
+4. 添加 --ar 3:4 参数
+
+## DALL-E 3 使用方法:
+1. 打开 ChatGPT Plus
+2. 复制 Prompt
+3. 发送给 DALL-E
+
+## 豆包/即梦 使用方法:
+1. 打开豆包 APP
+2. 选择图片生成
+3. 粘贴 Prompt
+4. 选择 3:4 比例
+
+========================================
+# 生成后优化建议
+========================================
+
+如果文字不清楚:
+- 缩小文字数量
+- 减少到 4-5 个模块
+- 增加图片尺寸
+
+如果风格不对:
+- 添加 "hand-drawn style"
+- 添加 "sketch illustration"
+- 添加 "journal aesthetic"
+
+========================================

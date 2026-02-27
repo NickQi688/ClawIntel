@@ -1,0 +1,29 @@
+{
+  "id": "conv-1768848034002-klsrb534t",
+  "title": "Summarize content and change title",
+  "titleGenerationStatus": "success",
+  "createdAt": 1768848034003,
+  "updatedAt": 1768924754680,
+  "lastResponseAt": 1768848110495,
+  "sessionId": "5919c4bc-7099-40c9-a1cd-38e56c539c71",
+  "sdkSessionId": "5919c4bc-7099-40c9-a1cd-38e56c539c71",
+  "usage": {
+    "model": "claude-haiku-4-5-20251001",
+    "inputTokens": 30668,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 58288,
+    "contextWindow": 200000,
+    "contextTokens": 88956,
+    "percentage": 44
+  },
+  "toolDiffData": {
+    "call_vhoj9ibwo2o": {
+      "filePath": "剪藏内容/Thread by @binghe.md",
+      "originalContent": "---\ntitle: \"Thread by @binghe\"\nsource: \"https://x.com/binghe/status/2013264572082511957\"\nauthor:\n  - \"[[@binghe]]\"\ncreated: 2026-01-20\ndescription:\ntags:\n  - \"clippings\"\n---\n**冰河** @binghe [2026-01-19](https://x.com/binghe/status/2013264572082511957)\n\n阿里的“呜哩”，低调上线，免费的图片和视频生成！\n\n万相和即梦的模型都有！\n\n图片，视频现在都可以免费生成，而且还是最好的模型。不用白不用啊！\n\n可灵生成的视频可以1080P ，10秒，即梦seeddream 4.5生图可达到4K分辩率！\n\n![圖片](https://pbs.twimg.com/media/G_CNH9SXEAA4xT2?format=jpg&name=large) ![圖片](https://pbs.twimg.com/media/G_CNJIJWwAAYys4?format=jpg&name=large) ![圖片](https://pbs.twimg.com/media/G_CNLIoWEAAvW-k?format=jpg&name=large) ![圖片](https://pbs.twimg.com/media/G_CNRoxWIAAlQZm?format=jpg&name=large)",
+      "newContent": "---\ntitle: \"阿里推出免费AI内容生成平台 '呜哩'：万相+即梦模型\"\nsource: \"https://x.com/binghe/status/2013264572082511957\"\nauthor:\n  - \"[[@binghe]]\"\ncreated: 2026-01-20\ndescription: \"阿里低调上线免费AI内容生成平台'呜哩'，支持万相和即梦模型，可生成1080P视频和4K高清图片\"\ntags:\n  - \"clippings\"\n  - \"AI工具\"\n  - \"阿里\"\n  - \"免费\"\n  - \"内容生成\"\n---\n\n## 概要\n\n阿里低调推出免费AI内容生成平台\"呜哩\"，集成万相和即梦两大模型，支持图片和视频生成，质量达到行业顶尖水平。\n\n## 主要功能\n\n**免费内容生成**\n- 图片和视频完全免费生成\n- 使用行业最好的模型\n- 无需付费，\"不用白不用\"\n\n**技术规格**\n- **视频生成**：可灵模型支持1080P分辨率，10秒时长\n- **图片生成**：即梦seeddream 4.5模型支持4K高清分辨率\n\n**模型支持**\n- 万相模型\n- 即梦模型\n\n**来源**：@binghe 于2026-01-19发布\n\n![圖片](https://pbs.twimg.com/media/G_CNH9SXEAA4xT2?format=jpg&name=large) ![圖片](https://pbs.twimg.com/media/G_CNJIJWwAAYys4?format=jpg&name=large) ![圖片](https://pbs.twimg.com/media/G_CNLIoWEAAvW-k?format=jpg&name=large) ![圖片](https://pbs.twimg.com/media/G_CNRoxWIAAlQZm?format=jpg&name=large)"
+    }
+  },
+  "displayContentMap": {
+    "000d611d-2033-4920-9480-29183456f47b": "总结内容并更改标题"
+  }
+}

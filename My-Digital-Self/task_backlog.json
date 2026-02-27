@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "last_updated": "2026-02-07",
+    "total_tasks": 8,
+    "urgent_tasks": 0,
+    "completed_tasks": 3,
+    "in_progress_tasks": 3,
+    "paused_tasks": 2,
+    "completion_rate": "38%",
+    "total_skills": 11,
+    "system_version": "v2.1"
+  },
+  "backlog": [
+    {
+      "id": "0",
+      "title": "video-gen v3.2：Remotion风格特效升级",
+      "priority": "已完成",
+      "status": "完成",
+      "created_at": "2026-01-24",
+      "updated_at": "2026-01-24",
+      "description": "借鉴Remotion最佳实践，实现Spring风格动画特效系统",
+      "blocking_reason": "无",
+      "next_action": "可选：升级到v4.0完整Remotion Python封装",
+      "progress": "✅ 完成3个Remotion特效（spring-ease、elastic-ease、bounce-ease），对比测试5/5通过，文档完善"
+    },
+    {
+      "id": "1",
+      "title": "AI视频合作：制作漫画风烧烤店视频",
+      "priority": "低",
+      "status": "已暂停",
+      "created_at": "2026-01-19",
+      "updated_at": "2026-02-06",
+      "description": "蜀座停车场烧烤，200条/月，漫画风治愈系视频",
+      "blocking_reason": "春节前不再继续，和甲方沟通暂停",
+      "next_action": "春节后根据甲方需求决定是否继续",
+      "progress": "🎬 已交付67条视频（超额完成！），工作流成熟稳定，甲方满意春节前暂停合作"
+    },
+    {
+      "id": "2",
+      "title": "完善副业资源库自动采集脚本",
+      "priority": "中",
+      "status": "已暂停",
+      "created_at": "2026-01-19",
+      "updated_at": "2026-01-23",
+      "description": "脚本写了一半，已决定暂停",
+      "blocking_reason": "已暂停，专注AI视频项目",
+      "next_action": "无，AI视频项目完成后再考虑"
+    },
+    {
+      "id": "3",
+      "title": "虚拟资料店：明确目标群体和产品",
+      "priority": "中",
+      "status": "调研中",
+      "created_at": "2026-01-19",
+      "description": "目标群体'刚毕业的大学生'需要验证是否最佳选择",
+      "blocking_reason": "AI视频项目优先",
+      "next_action": "AI视频项目稳定后再推进"
+    },
+    {
+      "id": "4",
+      "title": "自媒体运营：用户主导+数字分身辅助",
+      "priority": "高",
+      "status": "进行中",
+      "work_type": "判断性 (SOP)",
+      "roi_level": "高 (个人品牌资产)",
+      "created_at": "2026-02-03",
+      "updated_at": "2026-02-06",
+      "description": "用户自己运营账号，数字分身提供素材库、选题管理、文案优化等辅助",
+      "blocking_reason": "无",
+      "next_action": "用户使用选题管理系统记录想法，数字分身协助深化和优化",
+      "progress": "✅ 选题管理系统已建立\n✅ 素材库已填充初始内容（金句、模板、案例）\n✅ Twitter继续测试（OpenClaw负责）\n✅ 小红书用户收回自主运营权\n🔄 等待用户使用工具并提供协助"
+    },
+    {
+      "id": "5",
+      "title": "系统化内容生产：测试并完善v2.1系统",
+      "priority": "高",
+      "status": "进行中",
+      "work_type": "重复性 (SOP可Agent化)",
+      "roi_level": "中 (生产效率提升)",
+      "created_at": "2026-02-04",
+      "updated_at": "2026-02-04",
+      "description": "测试新建立的选题管理、素材库、数据复盘机制，持续填充素材",
+      "blocking_reason": "无",
+      "next_action": "测试选题管理功能，记录几个碎片想法",
+      "progress": "✅ 系统化升级v2.1完成\n✅ 选题管理系统已建立\n✅ 素材库已填充初始内容\n✅ 数据复盘机制已建立\n✅ 业务运营追踪已建立\n🔄 等待用户测试使用"
+    },
+    {
+      "id": "7",
+      "title": "Life-OS后端改造：对接Obsidian",
+      "priority": "中",
+      "status": "进行中",
+      "work_type": "执行性 (基础设施)",
+      "roi_level": "中 (长期数据价值)",
+      "created_at": "2026-02-07",
+      "updated_at": "2026-02-07",
+      "description": "将Life-OS从飞书存储迁移到GitHub+Obsidian，实现云端录入本地同步",
+      "blocking_reason": "无",
+      "next_action": "可选：添加本地MCP服务（Playwright深度抓取）或图片下载功能",
+      "progress": "✅ 分析Life-OS源码架构\n✅ 设计GitHub API对接方案\n✅ 完善githubService.js：错误处理、重试机制、文件冲突检测\n✅ 优化Jina Reader集成：平台识别、URL保留、内容长度优化\n✅ 创建更新日志文档\n✅ 测试验证通过：URL抓取、AI提炼、GitHub推送功能正常"
+    }
+
+  ],
+  "completed_today": [
+    "建立数字分身×OpenClaw协作体系：创建collaboration目录和协作文档",
+    "生成第一周Twitter内容规划：7天主题策划",
+    "创建Day 1官宣推文：强调从负债到用AI赚钱的真实故事",
+    "设计双向工作流：我策划内容→OpenClaw发布→收集数据→我优化策略",
+    "video-gen v3.2开发完成：实现Remotion风格Spring动画系统",
+    "新增3种Remotion特效：spring-ease、elastic-ease、bounce-ease",
+    "创建对比测试脚本test_comparison.py，生成5个对比视频",
+    "编写REMOTION_COMPARISON.md详细对比报告",
+    "修复Obsidian Git rebase卡住问题，恢复同步功能",
+    "清理测试文件：移动视频文件、删除空文件",
+    "添加.gitignore到video-gen skill",
+    "分析 Life-OS 源码：React + Vite + FeishuService + DeepSeekService 架构",
+    "设计 GitHub API 对接方案：替代飞书存储，实现云端录入本地同步",
+    "创建 githubService.js 原型文件：实现 GitHub API 文件推送",
+    "完善 githubService.js：错误处理、重试机制、文件冲突检测、内容大小检查",
+    "优化 Jina Reader 集成：平台识别（7个平台）、URL强制保留、内容长度优化",
+    "创建 Life-OS 更新日志 v2.2：详细记录改进内容",
+    "激活数字分身：切换中文模式",
+    "修复 OpenRouter Token 限制问题：max_tokens 从默认 64000 调整到 10000",
+    "修改 ~/.config/opencode/opencode.json：添加 max_tokens 配置"
+  ],
+  "ai_video_deliverables": {
+    "total_delivered": 67,
+    "target_per_month": 200,
+    "completion_percentage": "33.5%",
+    "estimated_daily_capacity": "6-10条（极简方案）",
+    "workflow": "即梦Agent模式 + 角色三视图 + 剪映合成",
+    "project_status": "春节前暂停，已交付67条，甲方满意",
+    "next_milestone": "春节后根据甲方需求决定是否继续"
+  },
+  "system_notes": "此backlog会在每次对话时更新，未完成任务会持续跟踪。metadata 字段自动统计任务状态。"
+}
