@@ -1,0 +1,20 @@
+# Nixpacks configuration for ClawIntel
+[phases.build]
+cmds = ["npm ci", "mkdir -p data"]
+
+[phases.start]
+cmds = ["node src/server.mjs"]
+
+[variables]
+NODE_ENV = "production"
+DIGEST_PORT = "8767"
+
+[build]
+include = [
+  "node_modules",
+  "data"
+]
+
+# Build better-sqlite3 with native bindings
+[build.nixpacks]
+providers = ["node"]

@@ -1,0 +1,411 @@
+/**
+ * ClawIntel 前端优化样式补丁
+ * 基于 frontend-elevated skill 设计原则
+ *
+ * 使用方法：在 index.html 的 <style> 标签中添加这些样式
+ */
+
+/* ========================================
+   CSS 变量系统 - Dracula + Crypto 风格
+   ======================================== */
+:root {
+  /* 主色系 */
+  --primary: #00FFFF;
+  --primary-dim: rgba(0, 255, 255, 0.1);
+  --accent: #FF00FF;
+  --accent-dim: rgba(255, 0, 255, 0.1);
+
+  /* 背景色系 */
+  --bg-primary: #0D0E15;
+  --bg-secondary: #13141F;
+  --bg-card: #1A1B26;
+  --bg-card-hover: #1F2033;
+
+  /* 文字色系 */
+  --text-primary: #F8F8F2;
+  --text-secondary: #6272A4;
+  --text-muted: #44475A;
+
+  /* 边框 */
+  --border-subtle: #2A2C3E;
+  --border-card: #343746;
+
+  /* 功能色 */
+  --success: #50FA7B;
+  --warning: #FFB86C;
+  --error: #FF5555;
+
+  /* 字体 */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* 动画时长 */
+  --anim-fast: 0.2s;
+  --anim-normal: 0.4s;
+  --anim-slow: 0.6s;
+}
+
+/* 亮色主题 */
+body.light {
+  --bg-primary: #F8F8F2;
+  --bg-secondary: #EDEDF0;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F5F5F8;
+  --text-primary: #1A1B26;
+  --text-secondary: #6A7285;
+  --text-muted: #A8ADB8;
+  --border-subtle: #E0E2E8;
+  --border-card: #D1D5DB;
+}
+
+/* ========================================
+   字体系统
+   ======================================== */
+body {
+  font-family: var(--font-display) !important;
+}
+
+.code, .mono, time-badge, .time-badge, .category-tag, .tab, .back-btn, .theme-toggle {
+  font-family: var(--font-mono) !important;
+}
+
+/* ========================================
+   动画定义
+   ======================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.2) translate(-5%, -5%);
+  }
+}
+
+@keyframes scan-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 4px; }
+}
+
+/* ========================================
+   背景层样式
+   ======================================== */
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-layer-glow-1 {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.06) 0%, transparent 50%);
+  animation: gradient-shift 20s ease-in-out infinite alternate;
+}
+
+.bg-layer-grid {
+  background-image:
+    linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+.bg-layer-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+}
+
+.bg-layer-scan {
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 255, 255, 0.02) 51%,
+    transparent 51%
+  );
+  background-size: 100% 4px;
+  animation: scan-move 8s linear infinite;
+}
+
+/* 内容容器提升 z-index */
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================================
+   标题优化
+   ======================================== */
+h1 {
+  font-family: var(--font-display) !important;
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: filter var(--anim-fast);
+}
+
+h1:hover {
+  filter: brightness(1.2);
+}
+
+.subtitle {
+  font-family: var(--font-mono) !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ========================================
+   Tab 优化
+   ======================================== */
+.tab {
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tab::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary-dim), var(--accent-dim));
+  opacity: 0;
+  transition: opacity var(--anim-fast);
+}
+
+.tab:hover::before,
+.tab.active::before {
+  opacity: 0.15;
+}
+
+.tab.active {
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+  box-shadow: 0 0 16px var(--primary-dim);
+}
+
+/* ========================================
+   分类筛选标签
+   ======================================== */
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.category-tab {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all var(--anim-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.category-tab:hover {
+  border-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+
+.category-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #000;
+  font-weight: 600;
+}
+
+/* ========================================
+   摘要卡片优化
+   ======================================== */
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+  box-shadow: 0 0 16px var(--primary-dim);
+}
+
+/* ========================================
+   摘要卡片优化
+   ======================================== */
+.digest-card {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--anim-fast) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.digest-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--primary) 50%,
+    transparent 100%);
+  opacity: 0;
+  transition: opacity var(--anim-fast);
+}
+
+.digest-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 32px rgba(0, 255, 255, 0.15),
+    0 0 0 1px var(--primary-dim);
+}
+
+.digest-card:hover::before {
+  opacity: 0.5;
+}
+
+/* ========================================
+   时间徽章优化
+   ======================================== */
+.time-badge {
+  font-family: var(--font-mono) !important;
+  color: var(--primary) !important;
+  background: var(--primary-dim) !important;
+  border-color: rgba(0, 255, 255, 0.2) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================
+   返回按钮优化
+   ======================================== */
+.back-btn {
+  font-family: var(--font-mono) !important;
+  transition: all var(--anim-fast);
+}
+
+.back-btn:hover {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  background: var(--primary-dim) !important;
+}
+
+/* ========================================
+   主题切换按钮优化
+   ======================================== */
+.theme-toggle {
+  font-family: var(--font-mono) !important;
+}
+
+.theme-toggle:hover {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+/* ========================================
+   分类标签（新增）
+   ======================================== */
+.category-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.category-tag.ai {
+  background: rgba(189, 147, 249, 0.15);
+  color: #BD93F9;
+  border: 1px solid rgba(189, 147, 249, 0.3);
+}
+
+.category-tag.crypto {
+  background: rgba(0, 255, 255, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.category-tag.binance {
+  background: rgba(255, 193, 7, 0.15);
+  color: #FFC107;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+/* ========================================
+   滚动条美化
+   ======================================== */
+.digest-viewer::-webkit-scrollbar,
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.digest-viewer::-webkit-scrollbar-track,
+.container::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.digest-viewer::-webkit-scrollbar-thumb,
+.container::-webkit-scrollbar-thumb {
+  background: var(--border-card);
+  border-radius: 4px;
+}
+
+.digest-viewer::-webkit-scrollbar-thumb:hover,
+.container::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* ========================================
+   响应式优化
+   ======================================== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4em !important;
+  }
+
+  .tab {
+    font-size: 11px !important;
+    padding: 8px 12px !important;
+  }
+}
+
+/* ========================================
+   亮色主题适配
+   ======================================== */
+body.light .bg-layer-glow-1 {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.03) 0%, transparent 50%);
+}
+
+body.light .bg-layer-grid {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+}
