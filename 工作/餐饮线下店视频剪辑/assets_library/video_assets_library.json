@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "last_updated": "2026-01-24",
+    "total_assets": 0,
+    "categories": ["门头", "室内", "人物", "食物", "其他"]
+  },
+  "assets": {
+    "门头": {
+      "门头正1.jpg": {
+        "path": "门头/门头正1.jpg",
+        "description": "门头正面角度1",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      },
+      "门头正2.jpg": {
+        "path": "门头/门头正2.jpg",
+        "description": "门头正面角度2",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      },
+      "门头侧1.jpg": {
+        "path": "门头/门头侧1.jpg",
+        "description": "门头侧面角度1",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      }
+    },
+    "室内": {
+      "室内全景1.jpg": {
+        "path": "室内/室内全景1.jpg",
+        "description": "室内全景角度1",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      },
+      "座位区1.jpg": {
+        "path": "室内/座位区1.jpg",
+        "description": "座位区角度1",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      }
+    },
+    "人物": {
+      "时尚美女1.jpg": {
+        "path": "人物/时尚美女1.jpg",
+        "description": "时尚美女参考图1",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      }
+    },
+    "食物": {
+      "烤串1.jpg": {
+        "path": "食物/烤串1.jpg",
+        "description": "烤串特写1",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      }
+    },
+    "其他": {
+      "街景1.jpg": {
+        "path": "其他/街景1.jpg",
+        "description": "街景参考1",
+        "usage_count": 0,
+        "success_rate": null,
+        "best_prompts": []
+      }
+    }
+  },
+  "keywords_mapping": {
+    "门头": ["门口", "门头", "店面", "店外"],
+    "室内": ["室内", "店内", "里面", "座位"],
+    "人物": ["人物", "美女", "老板", "顾客"],
+    "食物": ["烤串", "烧烤", "食物", "菜品"],
+    "其他": ["街景", "夜景", "背景"]
+  },
+  "usage_notes": "每次使用素材后，系统会自动更新usage_count和success_rate"
+}

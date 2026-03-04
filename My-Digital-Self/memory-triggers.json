@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "purpose": "数字分身自动触发器 - 检测关键词自动更新记忆",
+    "version": "1.0.0",
+    "last_updated": "2026-02-27"
+  },
+  "triggers": {
+    "completion": {
+      "keywords": ["完成", "搞定", "做完了", "结束了", "好了", "OK了", "✅", "成功", "finished", "done"],
+      "action": "update_state_and_log",
+      "priority": "高",
+      "fields": {
+        "task_completed": "刚才完成的任务是什么？",
+        "time_spent": "花了多长时间？",
+        "outcome": "结果如何？",
+        "next_step": "下一步是什么？"
+      }
+    },
+    "decision": {
+      "keywords": ["决定", "决策", "选", "定了", "确定", "决定做", "不做了"],
+      "action": "record_decision",
+      "priority": "高",
+      "fields": {
+        "topic": "关于什么的决策？",
+        "decision": "做了什么决定？",
+        "reason": "为什么这么决定？",
+        "alternatives": "考虑过哪些其他选项？"
+      }
+    },
+    "opportunity": {
+      "keywords": ["发现", "机会", "可以试试", "有意思的", "新想法", "灵感", "商业模式", "变现"],
+      "action": "evaluate_opportunity",
+      "priority": "中",
+      "fields": {
+        "what": "这是什么机会？",
+        "market": "市场规模多大？",
+        "competition": "竞争如何？",
+        "roi": "预期回报？"
+      }
+    },
+    "lesson": {
+      "keywords": ["踩坑", "失败", "错误", "问题", "bug", "不work", "搞不定", "错了"],
+      "action": "record_lesson",
+      "priority": "高",
+      "fields": {
+        "problem": "发生了什么？",
+        "root_cause": "根本原因是什么？",
+        "solution": "怎么解决的？",
+        "prevention": "怎么避免下次？"
+      }
+    },
+    "idea": {
+      "keywords": ["想法", "点子", "灵感", "可以这样", "要不", "试试"],
+      "action": "capture_idea",
+      "priority": "低",
+      "fields": {
+        "idea": "什么想法？",
+        "context": "在什么情境下？",
+        "potential": "有什么潜力？"
+      }
+    }
+  },
+  "auto_update_rules": {
+    "state_update_frequency": "每次检测到触发词",
+    "log_update_threshold": 5,
+    "conversation_summary_length": 200
+  },
+  "memory_files": {
+    "state": "My-Digital-Self/state.json",
+    "decisions": "My-Digital-Self/decisions.json",
+    "opportunities": "My-Digital-Self/opportunities.json",
+    "lessons": "My-Digital-Self/lessons.json",
+    "conversation_log": "My-Digital-Self/conversation_log.md"
+  }
+}

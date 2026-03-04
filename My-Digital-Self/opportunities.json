@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "purpose": "机会银行 - 追踪和评估商业机会",
+    "last_updated": "2026-02-27",
+    "version": "2.0.0"
+  },
+  "opportunities": {
+    "2026-02-27-001": {
+      "title": "6551 API商业应用",
+      "category": "API服务",
+      "potential": "高",
+      "market_size": "币圈信息聚合市场",
+      "competition": "低（6551刚开源）",
+      "roi_score": 8,
+      "effort_score": 3,
+      "status": "进行中",
+      "next_action": "完成crypto-skills，推广使用",
+      "deadline": "2026-02-28"
+    },
+    "2026-02-27-002": {
+      "title": "Seedance视频提示词商业化",
+      "category": "AI视频生成",
+      "potential": "中",
+      "market_size": "短视频营销市场",
+      "competition": "高",
+      "roi_score": 6,
+      "effort_score": 5,
+      "status": "暂停",
+      "reason": "优先级低于6551项目"
+    },
+    "2026-02-27-003": {
+      "title": "数字分身系统商业化",
+      "category": "AI Agent",
+      "potential": "高",
+      "market_size": "个人AI助理市场",
+      "competition": "中",
+      "roi_score": 9,
+      "effort_score": 8,
+      "status": "探索中",
+      "next_action": "先完善自己的系统，验证价值"
+    }
+  },
+  "scoring_guide": {
+    "roi_score": "1-10分，预期回报",
+    "effort_score": "1-10分，1=最容易，10=最难",
+    "priority": "roi_score / effort_score，越高越优先"
+  }
+}

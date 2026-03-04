@@ -1,0 +1,255 @@
+{
+  "main": {
+    "id": "cc29aedbb367ec5a",
+    "type": "split",
+    "children": [
+      {
+        "id": "50e4a6e07a985599",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e89ce3c30dbd445f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/a2222/Documents/qukuaiqiji/my-note/",
+                  "focus": false,
+                  "profile": {
+                    "args": [
+                      "-l "
+                    ],
+                    "executable": "/bin/zsh",
+                    "followTheme": true,
+                    "name": "macos1",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "终端：macos1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "04658bc265b03a41",
+    "type": "split",
+    "children": [
+      {
+        "id": "fcca356f4a0ad767",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c20273224ed563f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "f446601003c5c51d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ca8f869a9b562a41",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7f0f3af22992f2cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "641bf93471fa6d96",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "603c7ad1206b8aaf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "a72ac9cbb567e557",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "bfcffb651e3910bc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "c8d6828b10adb988",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "70df6d1db897f8f9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian42-brat:BRAT": false,
+      "terminal:Open terminal": false,
+      "obsidian-git:Open Git source control": false,
+      "claudian:Open Claudian": false
+    }
+  },
+  "active": "e89ce3c30dbd445f",
+  "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "new-year-video/HOW_TO_USE.md",
+    "new-year-video/render.sh",
+    "new-year-video/start.sh",
+    "new-year-video/PROJECT_SUMMARY.md",
+    "new-year-video/QUICKSTART.md",
+    "new-year-video/README.md",
+    "new-year-video/tsconfig.json",
+    "new-year-video/node_modules/@types/react/ts5.0/jsx-runtime.d.ts",
+    "new-year-video/node_modules/@types/react/ts5.0/jsx-dev-runtime.d.ts",
+    "new-year-video/node_modules/@types/react/ts5.0/index.d.ts",
+    "new-year-video/node_modules/@types/react/ts5.0/experimental.d.ts",
+    "new-year-video/node_modules/@types/react/ts5.0/global.d.ts",
+    "new-year-video/node_modules/@types/react/ts5.0/canary.d.ts",
+    "new-year-video/node_modules/@types/react/ts5.0",
+    "new-year-video/node_modules/@types/react/README.md",
+    "new-year-video/node_modules/typescript/SECURITY.md",
+    "new-year-video/node_modules/typescript/README.md",
+    "new-year-video/node_modules/csstype/README.md",
+    "new-year-video/node_modules/@types/react-dom/README.md",
+    "new-year-video/node_modules/@remotion/compositor-darwin-arm64/LICENSE.md",
+    "new-year-video/node_modules/@remotion/compositor-darwin-arm64/README.md",
+    "new-year-video/node_modules/@esbuild/darwin-arm64/README.md",
+    "new-year-video/node_modules/@remotion/studio-shared/LICENSE.md",
+    "new-year-video/node_modules/@remotion/studio/LICENSE.md",
+    "new-year-video/node_modules/@remotion/renderer/LICENSE.md",
+    "new-year-video/node_modules/webpack/SECURITY.md",
+    "new-year-video/node_modules/webpack/README.md",
+    "new-year-video/node_modules/react-dom/README.md",
+    "new-year-video/node_modules/@remotion/studio-shared/README.md",
+    "new-year-video/node_modules/@remotion/studio/README.md",
+    "new-year-video/node_modules/@remotion/renderer/README.md",
+    "new-year-video/node_modules/react/README.md",
+    "new-year-video/node_modules/@jridgewell/source-map/README.md",
+    "new-year-video/node_modules/is-wsl/readme.md",
+    "new-year-video/node_modules/@remotion/bundler/LICENSE.md",
+    "new-year-video/node_modules/@remotion/studio-server/web/favicon.png"
+  ]
+}

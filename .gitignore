@@ -1,0 +1,41 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/app.json
+.obsidian/graph.json
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Claude相关（会话文件，不应提交）
+.claude/sessions/
+.claude/claudian-settings.json
+
+# 但保留skills和插件配置
+!.claude/skills/
+
+# API 配置文件（包含敏感信息）
+.env
+
+# Node modules（如果有）
+node_modules/
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+
+# 视频文件（不再同步）
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.m4v

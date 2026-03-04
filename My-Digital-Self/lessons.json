@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "purpose": "教训库 - 记录踩过的坑，避免重复犯错",
+    "last_updated": "2026-02-27",
+    "version": "2.0.0"
+  },
+  "lessons": {
+    "2026-02-27-001": {
+      "problem": "Bash命令路径问题",
+      "context": "使用/dev/null导致被阻止",
+      "root_cause": "安全限制，部分路径不可访问",
+      "solution": "避免使用重定向到特殊路径，用Glob/Read替代",
+      "impact": "浪费时间调试",
+      "prevention": "优先用内置工具（Glob/Grep/Read），少用Bash"
+    },
+    "2026-02-27-002": {
+      "problem": "文件创建位置错误",
+      "context": "Write工具创建文件到嵌套目录",
+      "root_cause": "相对路径解析问题",
+      "solution": "使用绝对路径或验证当前目录",
+      "impact": "文件找不到，执行失败",
+      "prevention": "写文件前先pwd确认位置"
+    },
+    "2026-02-27-003": {
+      "problem": "6551 API token格式错误",
+      "context": "token多了'c'前缀",
+      "root_cause": "复制时带入多余字符",
+      "solution": "验证token格式，JWT应以'eyJ'开头",
+      "impact": "API调用失败",
+      "prevention": "API调用前验证token格式"
+    }
+  },
+  "patterns": {
+    "常见错误": [
+      "路径问题 - 用Glob/Read优先",
+      "权限问题 - 检查文件是否可读写",
+      "格式问题 - 先验证再使用"
+    ],
+    "最佳实践": [
+      "读文件能解决的别问用户",
+      "先搜上下文再执行",
+      "遇到问题先修再报",
+      "重要决策写进文件"
+    ]
+  }
+}

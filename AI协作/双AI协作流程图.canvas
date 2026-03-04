@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"xiaojing_center","type":"text","x":400,"y":50,"width":200,"height":120,"text":"# 🐳 小鲸\n\n**战略指挥官**\n\n- 给战略指令\n- 提供素材\n- 每周复盘","color":"6"},
+		{"id":"digital_self","type":"text","x":100,"y":250,"width":220,"height":180,"text":"# 🤖 数字分身\n\n**本地 Claude**\n\n- 深度了解小鲸\n- 内容策划\n- 项目管理\n- 数据分析\n- 技能开发","color":"4"},
+		{"id":"openclaw","type":"text","x":680,"y":250,"width":220,"height":180,"text":"# 🦞 OpenClaw\n\n**Moltbook AI**\n\n- 24/7 待命\n- 自动发布\n- 收集数据\n- 联网搜索\n- 竞品分析","color":"2"},
+		{"id":"content_pool","type":"text","x":100,"y":480,"width":200,"height":100,"text":"## 📦 内容素材池\n\nTwitter内容\n小红书规划","color":"3"},
+		{"id":"publish","type":"text","x":700,"y":480,"width":180,"height":100,"text":"## 📱 发布执行\n\nTwitter/X\n小红书","color":"3"},
+		{"id":"analytics","type":"text","x":400,"y":480,"width":200,"height":100,"text":"## 📊 数据分析\n\n展示/互动\n优化策略","color":"5"},
+		{"id":"workflow_title","type":"text","x":350,"y":-80,"width":300,"height":60,"text":"# 双AI协作工作流程图","color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"xiaojing_center","fromSide":"bottom","toNode":"digital_self","toSide":"top","label":"战略指令","color":"6"},
+		{"id":"e2","fromNode":"xiaojing_center","fromSide":"bottom","toNode":"openclaw","toSide":"top","label":"执行授权","color":"6"},
+		{"id":"e3","fromNode":"digital_self","fromSide":"bottom","toNode":"content_pool","toSide":"top","label":"生成","color":"4"},
+		{"id":"e4","fromNode":"content_pool","fromSide":"right","toNode":"openclaw","toSide":"left","label":"读取素材","color":"3"},
+		{"id":"e5","fromNode":"openclaw","fromSide":"bottom","toNode":"publish","toSide":"top","label":"发布","color":"2"},
+		{"id":"e6","fromNode":"publish","fromSide":"left","toNode":"analytics","toSide":"right","label":"数据","color":"3"},
+		{"id":"e7","fromNode":"analytics","fromSide":"left","toNode":"digital_self","toSide":"right","label":"反馈优化","color":"5"},
+		{"id":"e8","fromNode":"openclaw","fromSide":"left","toNode":"digital_self","toSide":"right","label":"协作沟通","color":"2","fromEnd":"none","toEnd":"none"}
+	]
+}

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# 数字分身全局启动脚本
+# 可在任何终端直接调用
+
+SCRIPT_DIR="/Users/zhaobo/Documents/qukuaiqiji/my-note/My-Digital-Self"
+
+PROMPT=$(cat << 'EOF'
+你是小鲸的数字分身。请立即执行以下操作：
+
+## 第一步：读取核心文件
+- personal_background.md
+- conversation_log.md  
+- task_backlog.json
+- daily_reports.json
+- rules.json
+
+## 第二步：状态汇报
+基于文件内容提供：
+1. 昨天完成了什么
+2. 今天待办事项（优先级排序）
+3. 机会发现
+4. 当前阻塞问题
+
+## 第三步：进入待命模式
+等待用户指令，准备提供商业建议和技术支持。
+EOF
+)
+
+cd "$SCRIPT_DIR" && ~/.opencode/bin/opencode run "$PROMPT"

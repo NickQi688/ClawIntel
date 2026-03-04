@@ -1,0 +1,100 @@
+{
+  "opportunities": [
+    {
+      "id": "001",
+      "title": "AI视频制作服务",
+      "description": "为线下连锁餐饮店提供AI视频制作服务，用AI视频节省人力+带来流量",
+      "market_size": "本地餐饮商家，单店月费2000-5000元",
+      "competition_intensity": "低，AI视频制作服务商不多",
+      "technical_difficulty": "中，已建立完整工作流",
+      "time_investment": "每天3小时可生产6-10条",
+      "expected_return": "月收入6000-15000元（200条/月）",
+      "scalability": "高，可复制到其他城市和行业",
+      "roi_score": "high",
+      "status": "已验证",
+      "evidence": "已交付67条视频，甲方满意，春节前暂停合作",
+      "next_action": "春节后根据甲方需求决定是否继续",
+      "date_added": "2026-01-19"
+    },
+    {
+      "id": "002",
+      "title": "自媒体运营（X + 小红书）",
+      "description": "真实记录每天的所思所想、AI研究、项目进度，建立个人品牌",
+      "market_size": "个人品牌价值难以量化，潜在合作机会无限",
+      "competition_intensity": "高，但个人定位差异化",
+      "technical_difficulty": "低，已有系统化内容生产流程v2.1",
+      "time_investment": "每天1-2小时内容创作",
+      "expected_return": "品牌价值→机会→收入，路径清晰但时间不确定",
+      "scalability": "高，内容可多平台分发",
+      "roi_score": "medium",
+      "status": "进行中",
+      "evidence": "已建立系统化工作流，选题管理+素材库+数据复盘机制完善",
+      "next_action": "持续测试选题管理功能，记录碎片想法",
+      "date_added": "2026-01-19"
+    },
+    {
+      "id": "003",
+      "title": "小红书虚拟资料店",
+      "description": "工具+资料的半垂直模式，通过AI做小工具提高客单价",
+      "target_market": "刚毕业的大学生（需要验证是否最佳选择）",
+      "market_size": "大学生求职市场，付费意愿中等",
+      "competition_intensity": "中，同质化产品较多",
+      "technical_difficulty": "低-中，需要开发差异化AI工具",
+      "time_investment": "产品开发+持续运营",
+      "expected_return": "客单价19-49元，需流量支撑",
+      "scalability": "中，可扩展到其他垂直人群",
+      "roi_score": "medium",
+      "status": "调研中",
+      "evidence": "店已开，还在规划具体产品",
+      "next_action": "AI视频项目稳定后再推进",
+      "date_added": "2026-01-19"
+    },
+    {
+      "id": "004",
+      "title": "副业资源库自动化",
+      "description": "整理最新副业课程，公众号+闲鱼引流拉会员",
+      "market_size": "副业需求大，付费意愿高",
+      "competition_intensity": "高，同质化严重",
+      "technical_difficulty": "低，脚本已写一半",
+      "time_investment": "内容采集+平台运营",
+      "expected_return": "会员费模式，月收入1000-5000元",
+      "scalability": "中，内容采集可自动化",
+      "roi_score": "low",
+      "status": "已暂停",
+      "evidence": "脚本写了一半，已决定暂停专注AI视频",
+      "next_action": "AI视频项目完成后再考虑",
+      "date_added": "2026-01-19"
+    },
+    {
+      "id": "005",
+      "title": "数字分身系统商业化",
+      "description": "将个人数字分身系统产品化，为其他AI用户提供系统化管理工具",
+      "market_size": "AI用户快速增长，工具需求旺盛",
+      "competition_intensity": "低-中，同类产品少",
+      "technical_difficulty": "高，需要产品化封装",
+      "time_investment": "产品开发+文档+运营",
+      "expected_return": "SaaS订阅或一次性购买，潜在收入高",
+      "scalability": "高，可服务全球AI用户",
+      "roi_score": "high",
+      "status": "概念验证",
+      "evidence": "已建立v2.1系统，包含状态管理、任务追踪、内容生产等完整功能",
+      "next_action": "完成当前项目后，评估产品化可行性",
+      "date_added": "2026-02-07"
+    }
+  ],
+  "evaluation_framework": {
+    "criteria": [
+      "市场规模与增长潜力",
+      "竞争强度与差异化空间",
+      "技术实现难度",
+      "时间投入与预期回报",
+      "可复制性和可扩展性"
+    ],
+    "roi_scoring": {
+      "high": "立即执行 - 高价值低门槛（AI视频服务、数字分身商业化）",
+      "medium": "深度调研 - 潜力大但需验证（自媒体、虚拟资料店）",
+      "low": "暂缓 - ROI不足或风险过高（副业资源库）"
+    }
+  },
+  "recommendation": "优先级排序：1. AI视频服务（春节后）2. 自媒体运营（持续）3. 数字分身商业化（未来）4. 虚拟资料店（待验证）5. 副业资源库（已暂停）"
+}

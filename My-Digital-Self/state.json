@@ -1,0 +1,131 @@
+{
+  "_meta": {
+    "purpose": "当前状态 - 数字分身的实时工作状态",
+    "last_updated": "2026-02-27T16:00:00Z",
+    "version": "2.0.0-合伙人模式"
+  },
+  "system_info": {
+    "version": "v2.0",
+    "last_boot": "2026-02-27",
+    "mode": "合伙人模式",
+    "total_interactions": 100,
+    "tasks_completed": 25,
+    "decisions_made": 15
+  },
+  "current_session": {
+    "session_id": "2026-02-27-001",
+    "start_time": "2026-02-27T16:00:00Z",
+    "context": "数字分身系统优化"
+  },
+  "today": {
+    "date": "2026-02-27",
+    "completed": [
+      "6551 API集成到crypto-intel",
+      "创建crypto-skills仓库结构",
+      "重构数字分身系统v2.0",
+      "创建记忆系统（decisions/opportunities/lessons）",
+      "自动化币圈资讯抓取系统（launchd定时任务）",
+      "自动记忆更新系统（触发器+记忆管理器）"
+    ],
+    "in_progress": [],
+    "blocked": []
+  },
+  "priorities": {
+    "P0_紧急": [],
+    "P1_今天": [
+      "完成数字分身系统优化",
+      "推送crypto-skills到GitHub"
+    ],
+    "P2_本周": [
+      "验证6551 API稳定性",
+      "测试crypto-skills在其他电脑"
+    ],
+    "P3_排队": [
+      "Seedance视频提示词商业化",
+      "数字分身系统商业化探索"
+    ]
+  },
+  "skill_tree": {
+    "crypto_intelligence": {
+      "level": "熟练",
+      "proficiency": "集成6551 API，50+新闻源，AI评分系统",
+      "milestones_achieved": ["6551 API集成", "crypto-skills创建"],
+      "next_milestone": "推广使用，收集反馈"
+    },
+    "digital_self": {
+      "level": "运行中",
+      "proficiency": "合伙人模式 + 自动记忆系统",
+      "milestones_achieved": ["定义合伙人性格", "创建记忆系统", "实现自动触发器", "自动化资讯抓取"],
+      "next_milestone": "验证合伙人模式效果"
+    },
+    "rapid_development": {
+      "level": "商用级",
+      "proficiency": "快速原型开发，技能集成",
+      "milestones_achieved": ["video-gen v3.2", "crypto-skills"],
+      "next_milestone": "提升自动化能力"
+    }
+  },
+  "focus_areas": {
+    "当前重点": "6551 API应用 + 数字分身系统",
+    "时间分配": {
+      "6551项目": "40%",
+      "数字分身": "30%",
+      "币安内容": "20%",
+      "其他": "10%"
+    }
+  },
+  "resources": {
+    "api_quota": {
+      "6551": "9981/10000",
+      "last_check": "2026-02-27T15:40:00Z"
+    },
+    "available_tools": [
+      "crypto-6551",
+      "crypto-intel",
+      "binance-content",
+      "digital-self",
+      "gemini-seedance"
+    ]
+  },
+  "waiting_for": {
+    "GitHub仓库名": "推送crypto-skills需要",
+    "用户确认": "合伙人模式是否符合预期"
+  },
+  "next_actions": [
+    "继续优化数字分身系统",
+    "等待GitHub仓库名",
+    "每日币安内容发布",
+    "验证新交互模式"
+  ],
+  "active_projects": [
+    "6551 API应用（高优先级）",
+    "数字分身系统v2.0（高优先级）",
+    "币安广场内容（中优先级）"
+  ],
+  "paused_projects": [
+    "Seedance视频提示词商业化",
+    "副业资源库脚本"
+  ],
+  "growth_trajectory": [
+    {
+      "date": "2026-02-27",
+      "event": "数字分身v2.0升级",
+      "milestone": "从助手模式升级为合伙人模式"
+    },
+    {
+      "date": "2026-02-27",
+      "event": "6551 API集成",
+      "milestone": "完成crypto-skills仓库创建"
+    },
+    {
+      "date": "2026-02-27",
+      "event": "自动记忆系统上线",
+      "milestone": "实现触发器检测+自动更新记忆"
+    },
+    {
+      "date": "2026-02-27",
+      "event": "自动化资讯抓取",
+      "milestone": "launchd定时任务，每天8:00自动运行"
+    }
+  ]
+}

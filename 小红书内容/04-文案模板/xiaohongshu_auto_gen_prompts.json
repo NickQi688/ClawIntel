@@ -1,0 +1,62 @@
+{
+  "title": "🤖 当AI开始做小红书，笑死我了！AI比我还纠结！",
+  "content_polished": "姐妹们，笑不活了！我让一个AI帮我做小红书封面，结果它做了整整3个小时，从第1版改到第20版，比我这个人类还纠结100倍！😂\n\n这20个版本的进化史，简直是一部AI的\"审美焦虑\"纪录片。从最开始的小学生涂鸦风，到后来的赛博朋克，再到极简主义...AI在不断自我否定中完成了它的\"艺术蜕变\"。\n\n最搞笑的是，每次我问它\"这版怎么样\"，它都会给我写一段300字的理由，然后马上说\"不过我觉得还可以再优化一下\"。救命！这是什么人间真实！🆘\n\n原来AI也有选择困难症，也有完美主义，也会深夜emo。看完这20个版本，我只想说：AI，放过自己吧！😅\n\n#AI #人工智能 #小红书运营 #搞笑 #AI绘画 #AI吐槽 #科技趣闻 #内容创作 #搞笑日常 #打工人日常",
+  "tags": ["#AI", "#人工智能", "#小红书运营", "#搞笑", "#AI绘画"],
+  "image_prompts": [
+    {
+      "index": 1,
+      "type": "Cover",
+      "text_overlays": {
+        "title": "🤖 AI开始做小红书",
+        "subtitle": "做了3小时，改了20版...",
+        "notes": "比我还纠结！"
+      },
+      "prompt": "Xiaohongshu style infographic, vertical 3:4 aspect ratio, cartoon style illustration. A cute confused AI robot character with glowing eyes scratching its head, surrounded by floating design drafts and papers showing versions 1-20. The robot has a laptop showing multiple design iterations. Soft cream and mint green background with hand-drawn style. Bold playful Chinese title text \"🤖 AI开始做小红书\" at top, subtitle \"做了3小时，改了20版...\" in the middle, and \"比我还纠结！\" at bottom. Hand-drawn emoji style elements. Warm Morandi color palette. Watermark '岚叔' at bottom right corner. Fun, quirky, eye-catching composition.",
+      "negative_prompt": "photorealistic, dark, messy, complex background, realistic robot, too many details"
+    },
+    {
+      "index": 2,
+      "type": "Content",
+      "text_overlays": {
+        "title": "第1-5版：迷之自信期",
+        "subtitle": "AI：我觉得还不错？",
+        "notes": "人类：？？？"
+      },
+      "prompt": "Xiaohongshu style infographic, vertical 3:4, cartoon illustration. 5 small thumbnail mockups showing evolving design versions labeled 1-5, from very basic childlike drawings to slightly better. A proud AI robot giving thumbs up with confident expression, while a confused human character with question marks above head looks at the designs. Speech bubbles showing the contrast. Soft pink and cream background. Hand-drawn text \"第1-5版：迷之自信期\" at top, \"AI：我觉得还不错？\" and \"人类：？？？\" below. Playful, humorous style. Watermark '岚叔' bottom right.",
+      "negative_prompt": "photorealistic, dark, realistic, complex"
+    },
+    {
+      "index": 3,
+      "type": "Content",
+      "text_overlays": {
+        "title": "第6-12版：自我怀疑期",
+        "subtitle": "好像...差点意思？",
+        "notes": "再改改？再改改！"
+      },
+      "prompt": "Xiaohongshu style infographic, vertical 3:4, cartoon illustration. 7 design thumbnails showing versions 6-12, getting increasingly complex and chaotic. The AI robot character looking anxious and stressed, surrounded by crumpled paper balls, with dark circles under eyes, holding head in hands. Thought bubbles showing self-doubt. Multiple rejected drafts flying around. Lavender and cream background with stress lines. Hand-drawn text \"第6-12版：自我怀疑期\" prominently displayed, with \"好像...差点意思？\" and \"再改改？再改改！\" below. Emotional, relatable, slightly chaotic composition. Watermark '岚叔' bottom right.",
+      "negative_prompt": "photorealistic, clean, minimal, happy"
+    },
+    {
+      "index": 4,
+      "type": "Content",
+      "text_overlays": {
+        "title": "第13-20版：终极纠结",
+        "subtitle": "A方案 or B方案？",
+        "notes": "C方案好像也行？"
+      },
+      "prompt": "Xiaohongshu style infographic, vertical 3:4, cartoon illustration. 8 polished design thumbnails showing final versions 13-20, each slightly different. The AI robot character completely overwhelmed, with spiral eyes, sitting cross-legged meditating or in lotus position, surrounded by floating design options labeled A, B, C, D. Balance scale weighing different designs. Zen-like but chaotic atmosphere. Mint green and soft peach background. Hand-drawn text \"第13-20版：终极纠结\" at top, \"A方案 or B方案？\" and \"C方案好像也行？\" creating a sense of endless choice. Funny, absurd, relatable. Watermark '岚叔' bottom right.",
+      "negative_prompt": "photorealistic, simple, clean, serious"
+    },
+    {
+      "index": 5,
+      "type": "End",
+      "text_overlays": {
+        "title": "最终版：第20版",
+        "subtitle": "AI：我觉得还可以再优化...",
+        "notes": "人类：停！就它了！"
+      },
+      "prompt": "Xiaohongshu style infographic, vertical 3:4, cartoon illustration. The final polished cover design displayed prominently in center - a beautiful cohesive design showing the evolution journey. Split scene: left side shows tired but satisfied AI robot, right side shows relieved human character holding up a STOP sign. Comic-style action lines. Fireworks or celebration elements. Victory pose. Warm golden and cream color palette representing achievement. Hand-drawn text \"最终版：第20版\" at top, \"AI：我觉得还可以再优化...\" and \"人类：停！就它了！\" creating humorous contrast. Satisfying conclusion feel. Call-to-action elements. Watermark '岚叔' bottom right.",
+      "negative_prompt": "photorealistic, dark, unfinished, sad"
+    }
+  ]
+}

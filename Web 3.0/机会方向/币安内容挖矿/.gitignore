@@ -1,0 +1,16 @@
+# 敏感配置文件
+.env
+
+# 生成的日报
+*-*.md
+
+# 临时文件
+*.tmp
+*.log
+
+# node_modules
+node_modules/
+
+# OS 文件
+.DS_Store
+Thumbs.db
