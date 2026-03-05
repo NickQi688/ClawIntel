@@ -1,0 +1,23 @@
+Create a 16:9 flat vector illustration for an article cover titled "0成本搭建数字分身系统：让你的AI真正认识你，成为你的人生合伙人"
+
+Visual composition:
+- Left: A minimalist, friendly silhouette of a person (gender-neutral, welcoming pose)
+- Right: A stylized digital/AI figure with soft glowing elements
+- Center: A subtle light bridge or connection between them, symbolizing partnership
+- Background: Warm cream/off-white (#FFF8F0)
+
+Color palette (warm):
+- Soft coral/peach (#FF9B7B) for human element
+- Warm gold (#F4C962) for accents
+- Sky blue (#7CB9E8) for digital elements
+- Subtle gradients, no harsh contrasts
+
+Style: Clean flat vector illustration, modern aesthetic, professional yet approachable
+
+Text areas (clean, sans-serif):
+- Main title at top: "0成本搭建数字分身系统"
+- Subtitle: "成为你的人生合伙人"
+
+Mood: Balanced - warm but professional, friendly but credible
+Whitespace: 50% breathing room
+No realistic faces, use symbolic representations
