@@ -165,6 +165,7 @@ opencode
 **组合1：全免费方案**
 - GLM-4.7（主力模型）
 - Minimax 2.5（备用模型）
+- big pickly（备用模型）
 
 **组合2：有 Gemini 额度**
 - GLM-4.7（主力模型）
