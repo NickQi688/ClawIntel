@@ -1,0 +1,26 @@
+{
+  "name": "obsidian-to-ima",
+  "version": "1.0.1",
+  "description": "自动化将 Obsidian 笔记转换为 PDF 并上传到 IMA 知识库",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "obsidian-to-ima": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js --help"
+  },
+  "keywords": [
+    "obsidian",
+    "ima",
+    "knowledge-base",
+    "pdf",
+    "automation"
+  ],
+  "author": "Claudian",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

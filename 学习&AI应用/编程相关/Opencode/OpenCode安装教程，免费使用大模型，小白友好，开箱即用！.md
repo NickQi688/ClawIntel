@@ -15,11 +15,11 @@ tags:
 
 **一句话解读论文，AI配图，发公众号。**
 
-![图像](https://pbs.twimg.com/media/G-beiMgXYAA0I0X?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image.jpg)
 
 **一句话生成知识画布**
 
-![图像](https://pbs.twimg.com/media/G-belfEaMAAvB0G?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%201.jpg)
 
 **一句话生成小红书文案、封面和配图**
 
@@ -47,7 +47,7 @@ Claude 封号严重，找靠谱的第三方中转不容易。
 
 > [https://opencode.ai/](https://opencode.ai/)
 
-![图像](https://pbs.twimg.com/media/G-bet6ZX0AAAKj8?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%202.jpg)
 
 支持Mac OS、Windows、Linux。
 
@@ -61,7 +61,7 @@ Claude 封号严重，找靠谱的第三方中转不容易。
 
 安装好以后，输入opencode回车，就能看到界面。
 
-![图像](https://pbs.twimg.com/media/G-beyE9a8AApQ99?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%203.jpg)
 
 如果你用过Claude Code可能会比较熟悉。
 
@@ -71,7 +71,7 @@ Claude 封号严重，找靠谱的第三方中转不容易。
 
 你如果订阅了GPT、Gemini可以输入/connect
 
-![图像](https://pbs.twimg.com/media/G-be1XqWEAAooBe?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%204.jpg)
 
 选中OpenAI或Google，打开浏览器登录账号授权后就能用Codex和Gemini模型。
 
@@ -85,7 +85,7 @@ Claude 封号严重，找靠谱的第三方中转不容易。
 
 **1\. 代码生成能力不错**
 
-![图像](https://pbs.twimg.com/media/G-be8CVWQAAWKEj?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%205.jpg)
 
 SWE-Bench，解决开源Python项目中的真实GitHub问题，GLM 成绩是 73.8%，绝对第一梯队水平。
 
@@ -121,7 +121,7 @@ OpenCode不仅开源，提供免费模型，授权登录用付费模型。
 
 你只需跟OpenCode说：“帮我安装 oh-my-opencode 插件”
 
-![图像](https://pbs.twimg.com/media/G-be_sKboAANksj?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%206.jpg)
 
 GLM 4.7 会思考推理，调用搜索工具等，找到安装指令。
 
@@ -131,13 +131,13 @@ OMO是一个Agent框架，为了更好整合、编排模型。
 
 你可以回答有哪些，如果都没有也能继续安装。
 
-![图像](https://pbs.twimg.com/media/G-bfDgwb0AADqe0?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%207.jpg)
 
 很快就能安装成功。
 
 后续也能添加订阅，输入opencode auth login即可。
 
-![图像](https://pbs.twimg.com/media/G-bfHFgbcAAulCT?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%208.jpg)
 
 为啥一定要安装OMO插件呢？
 
@@ -145,7 +145,7 @@ OMO是一个Agent框架，为了更好整合、编排模型。
 
 "Sisyphus（西西弗斯）"是它的主控Agent，通常由高智商模型扮演（如 Opus 4.5 High）。
 
-![图像](https://pbs.twimg.com/media/G-bfOgYa0AEOVa9?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%209.jpg)
 
 然后指挥它的子Agent干活，比如：
 
@@ -168,7 +168,7 @@ OMO是一个Agent框架，为了更好整合、编排模型。
 
 还有很多超酷的东西和效果，太牛逼了！
 
-![图像](https://pbs.twimg.com/media/G-bfXchXcAAlwtt?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2010.jpg)
 
 ## 安装使用Skill
 
@@ -176,15 +176,15 @@ OMO是一个Agent框架，为了更好整合、编排模型。
 
 比如Obsidian CEO写的Skills最近超级火。
 
-![图像](https://pbs.twimg.com/media/G-bfbkpaoAAsQy2?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2011.jpg)
 
 只需要打开Opencode，输入：
 
 > “安装这里的skills [https://github.com/kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) ”
 
-![图像](https://pbs.twimg.com/media/G-bffJbbMAEBxPa?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2012.jpg)
 
-![图像](https://pbs.twimg.com/media/G-bfi-bXwAAfQy7?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2013.jpg)
 
 模型 GLM-4.7 会自己下载安装
 
@@ -192,15 +192,15 @@ OMO是一个Agent框架，为了更好整合、编排模型。
 
 因包含canvas，模型会推理出要用json-canvas Skill。
 
-![图像](https://pbs.twimg.com/media/G-bfm5oaQAAC4i1?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2014.jpg)
 
 生成一个Obsidian格式的canvas格式文件，打开效果如下
 
-![图像](https://pbs.twimg.com/media/G-bfqhhXEAAy3D9?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2015.jpg)
 
 也可以输入斜杠“/”，找到已经安装的Skill，显式精准调用。
 
-![图像](https://pbs.twimg.com/media/G-bfulZagAABCb_?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2016.jpg)
 
 ## 创建 Skill
 
@@ -230,15 +230,15 @@ OMO是一个Agent框架，为了更好整合、编排模型。
 
 我们做个测试，先写一个单页的Todolist
 
-![图像](https://pbs.twimg.com/media/G-bf0DkbUAEzP1Q?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2017.jpg)
 
 调用Skill，给了3个设计方案
 
-![图像](https://pbs.twimg.com/media/G-bf3VeaUAAnYqI?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2018.jpg)
 
 选方案B效果
 
-![图像](https://pbs.twimg.com/media/G-bf-lhaQAA3kXs?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2019.jpg)
 
 **你看，设计Skill是不是很简单？**
 
@@ -268,7 +268,7 @@ Skill可以设计打包你的工作流、提示词等。
 
 等一会儿，Github就地址就有了。
 
-![图像](https://pbs.twimg.com/media/G-bgHCqbEAAGtaO?format=jpg&name=large)
+![图像](assets/OpenCode安装教程，免费使用大模型，小白友好，开箱即用！/Image%2020.jpg)
 
 乔帮主通用设计美化Skill
 
